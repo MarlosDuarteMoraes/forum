@@ -19,7 +19,7 @@ public class TokenService {
 
 	@Value("${forum.jwt.secret}")
 	private String secret;
-
+ 
 	
 	public String gerarToken(Authentication authentication) {
 		Usuario logado = (Usuario) authentication.getPrincipal();
